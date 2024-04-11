@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Form for sigma web development:</h1>
+    <form action="post">
+        <div>
+            <br><br>
+            <label for="username" >Username:</label>
+            <input type="text" name="username" placeholder="Enter your username" id="username" required autofocus >
+        </div>
+        <div>
+            <br><br>
+            <input type="radio" name="gender" value="male" id="male">
+            <label for="male">male</label>
+            <input type="radio" name="gender" value="female" id="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" value="others" id="other">
+            <label for="other">Other</label>
+        </div>
+        <div>
+            <br><br>
+            <input type="checkbox" name="subscribe" id="subscribe" value="yes">
+            <label for="subscribe">Subscribed</label>
+        </div>
+        <div>
+            <br><br>
+            <label for="comment">Enter your comment below:</label>
+            <br>
+            <textarea name="comment" id="comment" cols="50" rows="4">Enter:</textarea>
+        </div>
+        <div>
+            <br><br>
+            <p>Select your favourite fruit:</p>
+            <select name="Fruits" id="fruits">
+                <option value="Apple">Apple</option>
+                <option value="Banana">Banana</option>
+                <option value="oraange">Orange</option>
+            </select>
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
