@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <caption>
+        <h2>Form for personal information:</h2>
+    </caption>
+    <form action="post">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name" placeholder="Enter your name" id="name">
+        </div>
+        <div>
+            <p>select your city name:</p>
+            <select name="city_name" id="city">
+                <option value="Mumbai">Mumbai</option>
+                <option value="Pune">Pune</option>
+                <option value="Delhi">Delhi</option>
+                <option value="lucknow">lucknow</option>
+                <option value="chennai">chennai</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <p></p>
+        <div>
+            <textarea name="pincode" id="pincode" cols="50" rows="1">Enter your pincode here:</textarea>
+        </div>
+        <p></p>
+        <div>
+            <button type="submit">Confirm</button>
+        </div>
+
+    </form>
+    
+    <script src="style.css"></script>
+</body>
+
+</html>
