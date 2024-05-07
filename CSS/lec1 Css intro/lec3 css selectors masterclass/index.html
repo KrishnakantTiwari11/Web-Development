@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css selectors</title>
+    <style>
+        div{
+            color: yellow;
+            background-color: red;
+        }
+        .red{
+            color: white;
+            background-color: black;
+        }
+        #red{
+            color: yellow;
+            background-color: green;
+        }
+        /*Child selector*/
+        div >p{
+            color: blueviolet;
+            background-color: orangered;
+        }
+        /*Descendant selector*/
+        div p{
+            color: red;
+            background-color: skyblue;
+        }
+        /*Universal selector*/
+        *{
+            margin: 0;
+            padding: 0%;
+        }
+        /*Pseudo selector*/
+        a:visited{
+            color: yellow;
+        }
+        a:link{
+            color: green;
+        }
+        a:active{
+            background-color: blue;   
+        }
+        a:hover{
+            background-color: navy;
+        }
+        p:first-child{
+            background-color: black;
+            color: gray;
+        }
+    </style>
+
+</head>
+
+<body>
+   <h1> We are learining css selectors.</h1>
+   <main>
+    <p>hey i am first one</p>
+    <p>hey i am second one</p>
+   </main>
+   <div>
+    Hey I am div and i can be styled.
+    <br><br>
+    <p>
+        Hey i am paragraph in div and i am styled using child selector
+
+    </p>
+   </div>
+   <span class="red" /*class-selector*/>
+    Hey i am div and i am styled by class
+   </span>
+   <span id="red">
+    Hey i am span and i am styled by id.
+   </span>
+   <div>
+    hey this will not change see
+    <article>
+        <p>
+            see i am under article and under p and my color is also changed with the help of Descendant_selector.
+        </p>
+    </article>
+   </div>
+   <a href="www.google.com">Go to google.</a>
+   <a href="www.bgmi.com">game ka link hai bhai</a>
+</body>
+
+</html>
