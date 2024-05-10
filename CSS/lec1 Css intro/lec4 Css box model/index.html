@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css boxmodel.</title>
+    <style   >
+        div
+        .box {
+            background-color: aqua;
+        }
+
+        .box1 {
+            color: red;
+            background-color: yellow;
+            padding: 10%;
+            border: 2px solid black;
+            margin: 5% ;
+            height: 200px;
+            /* this is size of whole content if we use box sizing border box everything will be concluded in
+            except margin ie 200+size of margin */
+            box-sizing: border-box;
+        }
+
+        .box2 {
+            color: darkblue;
+            padding: 10%;
+            border: 2px solid black;
+            margin: 5% ;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">
+        Hello i am box1.
+    </div>
+    <div class="box box2">
+        Hello i am box2.
+    </div>
+ 
+</body>
+
+</html>
