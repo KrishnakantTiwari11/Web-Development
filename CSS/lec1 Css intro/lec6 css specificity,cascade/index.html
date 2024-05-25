@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        p{
+            color: red;
+        }
+        #pid{
+            color: blue;
+            background-color: hotpink;
+        }
+        .para{
+            color: brown;
+            background-color: yellow;
+        }
+        p.para#pid{
+            color: black;
+        }
+        p{
+            color: green !important
+            ;
+        }
+    </style>
+</head>
+<body>
+    <!-- inline style>id selector>class or attribute selector>element selector>universal selector -->
+
+    <p class="para" id="pid">
+        hey i am here
+    </p>
+
+    
+</body>
+</html>
